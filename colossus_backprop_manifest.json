@@ -1,0 +1,28 @@
+[
+    {
+        "trainingFrameIdentifier": "NET-00001",
+        "forwardPassTelemetry": {
+            "handCalculatedPrediction": 0.0023,
+            "isolatedOutputErrorDelta": -0.1404
+        },
+        "algebraicOptimizationGovernance": {
+            "computedTotalGradientNorm": 0.0021,
+            "backpropExecutionStatus": "COMPLIANT_CONVERGENCE_STEP",
+            "ColossusAgentActionDirective": "COMMIT_DERIVATIVE_WEIGHT_ADJUSTMENT",
+            "pipelineResponseStatusCode": 200
+        }
+    },
+    {
+        "trainingFrameIdentifier": "NET-00002",
+        "forwardPassTelemetry": {
+            "handCalculatedPrediction": 0.3282,
+            "isolatedOutputErrorDelta": -3.2171
+        },
+        "algebraicOptimizationGovernance": {
+            "computedTotalGradientNorm": 5.2355,
+            "backpropExecutionStatus": "GRADIENT_EXPLOSION_HAZARD",
+            "ColossusAgentActionDirective": "EXECUTE_DYNAMIC_GRADIENT_CLIP_RESCALING",
+            "pipelineResponseStatusCode": 422
+        }
+    }
+]
